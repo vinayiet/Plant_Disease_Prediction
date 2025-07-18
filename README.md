@@ -2,45 +2,46 @@
 
 ## 📌 Problem Statement
 
-Plant diseases are a major contributor to agricultural losses across the globe. Many of these diseases—especially fungal infections—are triggered by specific environmental conditions. Early prediction of disease outbreaks can help farmers take timely preventive actions such as targeted pesticide application or improved irrigation planning.  
+Plant diseases, particularly fungal infections, are a leading cause of agricultural losses worldwide. These diseases are often triggered by specific environmental conditions such as high humidity, temperature, and rainfall. By predicting disease outbreaks early, farmers can take preventive measures to protect crops, optimize pesticide use, and improve yield.
 
-This project aims to develop a machine learning model that predicts the likelihood of plant disease occurrence based on environmental parameters like temperature, humidity, rainfall, and soil pH.
+This project uses a **Decision Tree Classifier** to predict whether a plant is likely to be diseased based on real-time environmental parameters.
 
 ---
 
 ## 📂 Dataset Overview
 
-This synthetic dataset contains **10,000 samples** collected from various simulated farm locations. Each row in the dataset represents environmental conditions and whether a plant disease was present.
+The synthetic dataset contains **10,000 samples** simulating various environmental conditions across farm locations. Each sample represents environmental measurements and a binary label indicating plant health.
 
-### 🧪 Features:
+### 🔑 Features:
 
-- `temperature`: Ambient temperature in °C  
-- `humidity`: Air humidity in percentage (%)  
-- `rainfall`: Amount of rainfall in millimeters (mm)  
-- `soil_pH`: Soil acidity or alkalinity  
-- `disease_present`: Target label — 0 (Healthy) or 1 (Diseased)
+- `temperature` — Ambient temperature in degrees Celsius  
+- `humidity` — Air humidity in percentage  
+- `rainfall` — Rainfall amount in millimeters  
+- `soil_pH` — Soil acidity or alkalinity  
+- `disease_present` — **Target label** (0 = Healthy, 1 = Diseased)
 
 ---
 
 ## 🎯 Objective
 
-Build a binary classification model that accurately predicts whether a disease is likely to occur under given environmental conditions.
+To train a binary classification model using a **Decision Tree** that can predict the presence of plant disease based on environmental factors.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
 - Python
-- Scikit-learn
+- Scikit-learn (DecisionTreeClassifier)
 - Pandas, NumPy, Matplotlib
 - Jupyter Notebook
-- Streamlit (for optional web-based UI)
+- **Streamlit** (for web UI)
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-2. Install dependencies
-   ```bash
-   pip install -r requirements.txt
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/vinayiet/plant-disease-predictor.git
+cd plant-disease-predictor

@@ -52,7 +52,7 @@ cd plant-disease-predictor
 
 ---
 
-### 2. (Optional) Create a Virtual Environment
+### 2. Create a Virtual Environment
 
 ```bash
 # Create environment with Python 3.10
@@ -82,18 +82,15 @@ streamlit
 
 ---
 
-### 4. Train the Model
+### 4. Train the Model (Optional)
 
-Run the training script to train the model and export `model.pkl`:
+Run the training script to train the model and export `plant_disease_detection_model.pkl`:
 
-```bash
-python train_model.py
-```
 
 Or, open and run the notebook:
 
 ```bash
-jupyter notebook model_training.ipynb
+jupyter notebook mode.ipynb
 ```
 
 ---

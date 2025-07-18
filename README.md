@@ -85,15 +85,10 @@ streamlit
 ### 4. Train the Model (Optional)
 
 Run the training script to train the model and export `plant_disease_detection_model.pkl`:
-
-```bash
-python train_model.py
-```
-
 Or, open and run the notebook:
 
 ```bash
-jupyter notebook mode.ipynb
+jupyter notebook model.ipynb
 ```
 
 ---

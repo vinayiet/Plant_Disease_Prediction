@@ -1,4 +1,4 @@
-````markdown
+
 # 🌿 Plant Disease Prediction using Environmental Data
 
 ## 📌 Problem Statement
@@ -145,4 +145,3 @@ Click **"Predict Disease Status"** to get a prediction:
 Contributions are welcome! Fork the project and submit pull requests for improvements.
 
 ---
-```

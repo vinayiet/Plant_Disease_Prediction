@@ -3,29 +3,29 @@
 
 ## 📌 Problem Statement
 
-Plant diseases, particularly fungal infections, are a leading cause of agricultural losses worldwide. These diseases are often triggered by specific environmental conditions such as high humidity, temperature, and rainfall. By predicting disease outbreaks early, farmers can take preventive measures to protect crops, optimize pesticide use, and improve yield.
+Plant diseases, especially fungal infections, are a major cause of crop losses globally. These diseases are often triggered by environmental factors like high humidity, temperature, and rainfall. Early prediction of disease outbreaks enables farmers to take preventive actions, optimize pesticide use, and improve crop yield.
 
-This project uses a **Decision Tree Classifier** to predict whether a plant is likely to be diseased based on real-time environmental parameters.
+This project leverages a **Decision Tree Classifier** to predict the likelihood of plant disease based on real-time environmental data.
 
 ---
 
 ## 📂 Dataset Overview
 
-The synthetic dataset contains **10,000 samples** simulating various environmental conditions across farm locations. Each sample represents environmental measurements and a binary label indicating plant health.
+The synthetic dataset consists of **10,000 samples** simulating diverse environmental conditions across different farm locations. Each sample includes environmental measurements and a binary label indicating plant health.
 
-### 🔑 Features:
+### 🔑 Features
 
-- `temperature` — Ambient temperature in degrees Celsius  
-- `humidity` — Air humidity in percentage  
-- `rainfall` — Rainfall amount in millimeters  
-- `soil_pH` — Soil acidity or alkalinity  
+- `temperature` — Ambient temperature (°C)
+- `humidity` — Air humidity (%)
+- `rainfall` — Rainfall (mm)
+- `soil_pH` — Soil pH value
 - `disease_present` — **Target label** (0 = Healthy, 1 = Diseased)
 
 ---
 
 ## 🎯 Objective
 
-To train a binary classification model using a **Decision Tree** that can predict the presence of plant disease based on environmental factors.
+Train a binary classification model using a **Decision Tree** to predict plant disease presence from environmental factors.
 
 ---
 
@@ -41,14 +41,14 @@ To train a binary classification model using a **Decision Tree** that can predic
 
 ## 🚀 Getting Started
 
-Follow these steps to clone the repository, train the model, and launch the Streamlit app:
+Follow these steps to set up the project, train the model, and launch the Streamlit app:
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/vinayiet/plant-disease-predictor.git
 cd plant-disease-predictor
-````
+```
 
 ---
 
@@ -86,6 +86,9 @@ streamlit
 
 Run the training script to train the model and export `plant_disease_detection_model.pkl`:
 
+```bash
+python train_model.py
+```
 
 Or, open and run the notebook:
 
@@ -101,20 +104,20 @@ jupyter notebook mode.ipynb
 streamlit run app.py
 ```
 
-This will launch the app in your web browser.
+This will open the app in your web browser.
 
 ---
 
 ### 6. Use the App
 
-Use inputs fields to input environmental parameters:
+Enter environmental parameters in the input fields:
 
 * 🌡️ Temperature
 * 💧 Humidity
 * 🌧️ Rainfall
 * 🌱 Soil pH
 
-Click **"Predict Disease Status"** to receive prediction:
+Click **"Predict Disease Status"** to get a prediction:
 
 * ✅ Healthy
 * ⚠️ Diseased
@@ -123,9 +126,9 @@ Click **"Predict Disease Status"** to receive prediction:
 
 ### 🧪 Troubleshooting
 
-* If `streamlit` is not recognized, activate your environment again.
-* If `model.pkl` is missing, make sure `train_model.py` was executed successfully.
-* Ensure all libraries from `requirements.txt` are installed.
+* If `streamlit` is not recognized, reactivate your environment.
+* If `plant_disease_detection_model.pkl` is missing, ensure `train_model.py` ran successfully.
+* Confirm all libraries from `requirements.txt` are installed.
 
 ---
 
@@ -139,6 +142,7 @@ Click **"Predict Disease Status"** to receive prediction:
 
 ## 🤝 Contributions
 
-Feel free to fork the project and submit pull requests for improvements!
+Contributions are welcome! Fork the project and submit pull requests for improvements.
 
 ---
+```
